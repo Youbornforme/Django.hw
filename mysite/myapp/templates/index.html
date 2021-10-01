@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% include 'add.html' with name='world' %}
+<div style="padding: 20px; background-color: fuchsia"> Extended template index!</div>
+<p><a href="{% url 'first' %}">To the first page</a></p>
+<p><a href="{% url 'random_page' %}">To the random page</a></p>
+<p><a href="{% url 'random_slug' %}">To the random page with random slug_text</a></p>
+{% endblock %}

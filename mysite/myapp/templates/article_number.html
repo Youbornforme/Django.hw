@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div style="padding: 20px; background-color: deepskyblue">
+    {% if check == 0 %}
+        <span> even </span>
+    {% else %}
+        <span> not even </span>
+    {% endif %}
+    {% include 'add2.html' with tx=text %}
+</div>
+    <p><a href="{% url 'index' %}">To the index page</a></p>
+{% endblock %}
