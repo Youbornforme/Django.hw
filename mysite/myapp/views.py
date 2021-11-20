@@ -38,7 +38,7 @@ def main_article(request):
     return render(request, 'main_article.html')
 
 
-def archive_article(request):
+def archive_article(request): 
     return render(request, 'archive_article.html')
 
 
@@ -95,3 +95,4 @@ def random_slug(request):
     return render(request, rnd_page, {
         'text': rnd_slug,
     })
+    
